@@ -1,3 +1,4 @@
+from PIL import Image
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -13,6 +14,7 @@ def load_lottieurl(url):
 
 # ---- LOAD ASSETS ----
 lottie_learning = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_9ungcrzx.json")
+img = Image.open("steps.png")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -48,7 +50,7 @@ with st.container():
     st.write("##")
     text_column, image_column = st.columns((2,1))
     with image_column:
-        st.title("💪💪💪")
+        st.image(img)
     with text_column:
         st.write(
             """
