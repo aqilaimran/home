@@ -37,6 +37,6 @@ with st.container():
             
             Doa'kan saya sukses!"""
         )
-        st.write("[My Channel >](https://youtube.com/QiljakNiboss)")
+        st.write("[I Learn from Here >](https://www.youtube.com/watch?v=VqgUkExPvLY)")
     with right_column:
         st_lottie(lottie_learning, height=300, key="learning")
