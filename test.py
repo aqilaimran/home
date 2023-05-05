@@ -1,8 +1,18 @@
 import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Aqila Webpage", page_icon=":tada:", layout="wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# ---- LOAD ASSETS ----
+lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_1jibotah.json")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -29,4 +39,4 @@ with st.container():
         )
         st.write("[My Channel >](https://youtube.com/QiljakNiboss)")
     with right_column:
-        st.write ("HI")
+        st_lottie(lottie_coding, height=500, key="coding")
