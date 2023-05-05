@@ -12,7 +12,8 @@ def load_lottieurl(url):
     return r.json()
 
 # ---- LOAD ASSETS ----
-lottie_coding = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_1jibotah.json")
+lottie_url_coding = "https://assets6.lottiefiles.com/packages/lf20_1jibotah.json"
+lottie_coding = load_lottieurl(lottie_url_coding)
 
 # ---- HEADER SECTION ----
 with st.container():
