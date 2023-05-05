@@ -48,7 +48,7 @@ with st.container():
     st.write("---")
     st.header("What I've Done")
     st.write("##")
-    text_column, image_column = st.columns((2,1))
+    image_column, text_column = st.columns((1,2))
     with image_column:
         st.image(img)
     with text_column:
