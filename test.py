@@ -33,4 +33,4 @@ with st.container():
         )
         st.write("[My Channel >](https://youtube.com/QiljakNiboss)")
     with right_column:
-        st.image(image, caption='Just keep learning')
+        st.image(image, caption='Just keep learning', width=300)
