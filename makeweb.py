@@ -48,7 +48,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st.subheader("Semangat!!! 💪")
+        st.title("Semangat!!! 💪")
     with text_column:
         st.write(
             """
