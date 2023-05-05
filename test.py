@@ -1,19 +1,12 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Aqila Webpage", page_icon=":tada:", layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-# ---- LOAD ASSETS ----
-lottie_url_coding = "https://assets6.lottiefiles.com/packages/lf20_1jibotah.json"
-lottie_coding = load_lottieurl(lottie_url_coding)
+# ---- INSERT IMAGE ----
+image = Image.open('learn.jpg')
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -40,4 +33,4 @@ with st.container():
         )
         st.write("[My Channel >](https://youtube.com/QiljakNiboss)")
     with right_column:
-        st_lottie(lottie_coding, height=500, key="coding")
+        st.image(image, caption='Just keep learning')
