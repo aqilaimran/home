@@ -1,5 +1,4 @@
-import json
-
+from PIL import Image
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -13,13 +12,9 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
 # ---- LOAD ASSETS ----
 lottie_learning = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_9ungcrzx.json")
-lottie_step = load_lottiefile("gbr/step.json")
+img = Image.open("gbr/steps.png")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -55,7 +50,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st_lottie(lottie_step, height=500, key="step")
+        st.image(img)
     with text_column:
         st.write(
             """
