@@ -6,7 +6,7 @@ from PIL import Image
 st.set_page_config(page_title="Aqila Webpage", page_icon=":tada:", layout="wide")
 
 # ---- INSERT IMAGE ----
-image = Image.open('learn.jpg')
+image = Image.open("images/learn.jpg")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -34,3 +34,4 @@ with st.container():
         st.write("[My Channel >](https://youtube.com/QiljakNiboss)")
     with right_column:
         st.image(image, caption='Just keep learning', width=300)
+       
