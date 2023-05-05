@@ -47,6 +47,8 @@ with st.container():
     st.header("What I've Done")
     st.write("##")
     text_column, image_column = st.columns((1,2))
+    with image_column:
+        st.title("💪💪💪")
     with text_column:
         st.write(
             """
@@ -60,5 +62,3 @@ with st.container():
             
             Selamat mencoba!!!"""
         )
-     with image_column:
-        st.title("💪💪💪")
