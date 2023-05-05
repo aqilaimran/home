@@ -1,4 +1,3 @@
-from PIL import Image
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -14,7 +13,6 @@ def load_lottieurl(url):
 
 # ---- LOAD ASSETS ----
 lottie_learning = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_9ungcrzx.json")
-img = Image.open("gbr/steps.png")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -35,7 +33,7 @@ with st.container():
             Saya seorang siswa kelas 9 yang sedang:
             - belajar pemrograman sederhana menggunakan Python dan Streamlit
             - menambah dan muroja'ah hafalan Al-Qur'an & Hadits
-            - belajar untuk menghadapi US bulan depan 💪
+            - belajar untuk menghadapi US bulan depan
             
             Doa'kan saya sukses!"""
         )
@@ -50,7 +48,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st.image(img)
+        st.subheader("Semangat!!! 💪")
     with text_column:
         st.write(
             """
