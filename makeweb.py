@@ -14,7 +14,7 @@ def load_lottieurl(url):
 
 # ---- LOAD ASSETS ----
 lottie_learning = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_9ungcrzx.json")
-img_step = Image.open("images\steps.png")
+img = Image.open("images/steps.png")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -50,7 +50,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st.image(img_step)
+        st.image(img)
     with text_column:
         st.write(
             """
