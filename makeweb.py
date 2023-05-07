@@ -19,7 +19,7 @@ def load_lottiefile(filepath: str):
 
 # ---- LOAD ASSETS ----
 lottie_learning = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_9ungcrzx.json")
-lottie_step = load_lottiefile("images/step.json")
+lottie_step = load_lottiefile("step.json")
 
 # ---- HEADER SECTION ----
 with st.container():
