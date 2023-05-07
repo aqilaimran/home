@@ -55,7 +55,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st_lottie(lottie_step, height=300, key="step")
+        st_lottie(lottie_step, height=250, key="step")
     with text_column:
         st.write(
             """
